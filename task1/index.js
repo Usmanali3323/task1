@@ -17,8 +17,11 @@ const __dirname = path.dirname(__filename);
 //mongodb connection
 connect();
 
-app.use(express.urlencoded({ extended: true }));
+
 app.set('view engine', 'ejs');
+app.use(express.urlencoded({ extended: true }));
+
+//public folder set static
 app.use(express.static(path.join(__dirname, 'public')));
 
 //render register.ejs 
@@ -30,9 +33,13 @@ app.get('/', (req, res) => {
 app.post('/register',async(req,res)=>{
 const {name,email,password} = req.body;
 if(!email && !password && name){
-    res.send("All field are required")
+    res.render("error",{error: "All field are required"})
 }
 try {    
+  const isUserExist = await User.findOne({email});
+  if(isUserExist){
+    return res.render("error",{error:"email already exist"})
+  }
 const newUser = await User.create({
     name,
     email,
@@ -80,8 +87,8 @@ app.post('/login', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen,(PORT)=>{
-    console.log(`app runing on ${PORT}`);
+
+app.listen(process.env.PORT || 3000,()=>{
+    console.log("app runing on 3000");
     
 })
