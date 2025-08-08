@@ -1,27 +1,50 @@
 <%- include('partials/header') %>
+
 <div class="reg_container">
-<form class="reg_form" method="POST" action="/register">
-  <div class="req_name">
+  <form class="reg_form" method="POST" action="/register">
+    <div class="req_name">
       <label>Full Name</label>
       <input type="text" name="name" required />
-  </div>
-  <div class="reg_email">
+    </div>
+    <div class="reg_email">
       <label>Email</label>
       <input type="email" name="email" required />
-  </div>
-  <div class="req_password">
+    </div>
+    <div class="req_password">
       <label>Password</label>
       <input type="password" name="password" required />
-  </div>
-  <div class="reg_cpassword">
+    </div>
+    <div class="reg_cpassword">
       <label>Confirm Password</label>
       <input type="password" name="confirmPassword" required />
-  </div>
-  <button type="submit">Register</button>
-      <div class="reg_note">
+    </div>
+
+    <!-- Error message area -->
+    <p class="error-message" style="color: red; display: none;"></p>
+
+    <button type="submit">Register</button>
+
+    <div class="reg_note">
       Don't have an account? <a href="/login">Login here</a>
     </div>
-</form>
+  </form>
 </div>
+
+<script>
+document.querySelector(".reg_form").addEventListener("submit", function (e) {
+    const password = document.querySelector('input[name="password"]').value;
+    const confirmPassword = document.querySelector('input[name="confirmPassword"]').value;
+    const errorMessage = document.querySelector(".error-message");
+
+    if (password !== confirmPassword) {
+        e.preventDefault(); // Stop form submission
+        errorMessage.textContent = "Passwords do not match!";
+        errorMessage.style.display = "block";
+    } else {
+        errorMessage.style.display = "none";
+    }
+});
+</script>
+
 
 <%- include('partials/footer') %>
