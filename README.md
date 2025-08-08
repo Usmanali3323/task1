@@ -30,16 +30,24 @@ PORT=5000
 ```
  Installation & Setup
 1. Clone the repository
-```git clone https://github.com/Usmanali3323/task1.git```
+```clone
+git clone https://github.com/Usmanali3323/task1.git
+```
 
-2. Navigate into the project folder
-```cd task1```
+3. Navigate into the project folder
+```root
+cd task1
+```
 
-3. Install dependencies
-```npm install```
+4. Install dependencies
+```install 
+npm install
+```
 
-4. Run the application
-```node index.js```
+6. Run the application
+```run
+node index.js
+```
 
 📌 Prerequisites
 Node.js installed on your system
