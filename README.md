@@ -27,19 +27,19 @@ Create a `.env` file in the root directory and add:
 ```env
 MONGO_URI=your_mongodb_connection_string
 PORT=5000
-
-📥 Installation & Setup
+```
+ Installation & Setup
 1. Clone the repository
-git clone https://github.com/Usmanali3323/task1.git
+```git clone https://github.com/Usmanali3323/task1.git```
 
 2. Navigate into the project folder
-cd task1
+```cd task1```
 
 3. Install dependencies
-npm install
+```npm install```
 
 4. Run the application
-node index.js
+```node index.js```
 
 📌 Prerequisites
 Node.js installed on your system
