@@ -30,22 +30,22 @@ PORT=5000
 ```
  Installation & Setup
 1. Clone the repository
-```clone
+```bash
 git clone https://github.com/Usmanali3323/task1.git
 ```
 
 3. Navigate into the project folder
-```root
+```bash
 cd task1
 ```
 
 4. Install dependencies
-```install 
+```bash 
 npm install
 ```
 
 6. Run the application
-```run
+```bash
 node index.js
 ```
 
