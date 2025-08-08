@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+<div class="reg_container">
+<form class="reg_form" method="POST" action="/register">
+  <div class="req_name">
+      <label>Full Name</label>
+      <input type="text" name="name" required />
+  </div>
+  <div class="reg_email">
+      <label>Email</label>
+      <input type="email" name="email" required />
+  </div>
+  <div class="req_password">
+      <label>Password</label>
+      <input type="password" name="password" required />
+  </div>
+  <div class="reg_cpassword">
+      <label>Confirm Password</label>
+      <input type="password" name="confirmPassword" required />
+  </div>
+  <button type="submit">Register</button>
+      <div class="reg_note">
+      Don't have an account? <a href="/login">Login here</a>
+    </div>
+</form>
+</div>
+
+<%- include('partials/footer') %>

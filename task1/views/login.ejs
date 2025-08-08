@@ -1,0 +1,23 @@
+  <%- include('partials/header') %>
+
+<body>
+  <div class="log_container">
+    <div class="log_title">Login</div>
+    <form class="log_form" action="/login" method="POST">
+      <div class="log_inputGroup">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="log_inputGroup">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <button class="log_button" type="submit">Login</button>
+    </form>
+    <div class="log_note">
+      Don't have an account? <a href="/">Register here</a>
+    </div>
+  </div>
+  <%- include('partials/footer') %>

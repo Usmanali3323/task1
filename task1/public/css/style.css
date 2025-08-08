@@ -1,0 +1,230 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+/*Header component*/
+.head_container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.head_title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.head_nav {
+  margin-top: 10px;
+}
+
+.head_link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/*Footer*/
+.foot_footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+.foot_text {
+  color: #333;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Register page     */
+/* Container styling */
+.reg_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Form styling */
+.reg_form {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Input group */
+.reg_form > div {
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+.reg_form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input styling */
+.reg_form input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border 0.3s ease;
+}
+
+.reg_form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Optional: Add a submit button */
+.reg_form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reg_form button:hover {
+  background-color: #0056b3;
+}
+
+.reg_note {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.reg_note a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.reg_note a:hover {
+   text-decoration: underline;
+}
+
+
+
+/*Login Page*/
+  .log_container {
+      width: 100%;
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 30px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .log_title {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .log_form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .log_inputGroup {
+      margin-bottom: 15px;
+    }
+
+    .log_inputGroup label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    .log_inputGroup input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .log_button {
+      padding: 12px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .log_button:hover {
+      background: #0056b3;
+    }
+
+    .log_note {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .log_note a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .log_note a:hover {
+      text-decoration: underline;
+    }
+
+
+    /*Dashboard css*/
+    .das_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #f4f4f4;
+}
+
+.das_card {
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.das_title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.das_email {
+  font-size: 1.2rem;
+  color: #666;
+}

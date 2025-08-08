@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="head_container">
+    <h1 class="head_title">My Website</h1>
+    <nav class="head_nav">
+     <a class="head_link" href="<%= route === 'register' ? '/' : (route === 'logout' ? '/login' : route) %>"><%= route %></a>
+
+    </nav>
+  </header>
