@@ -37,7 +37,7 @@ document.querySelector(".reg_form").addEventListener("submit", function (e) {
     const errorMessage = document.querySelector(".error-message");
 
     if (password !== confirmPassword) {
-        e.preventDefault(); // Stop form submission
+        e.preventDefault(); 
         errorMessage.textContent = "Passwords do not match!";
         errorMessage.style.display = "block";
     } else {
